@@ -1,10 +1,17 @@
 
-  var i = 1;
-  var intervalID = window.setInterval(myCallback, 1500);
+// ocutar todos os novos campos
+document.addEventListener("DOMContentLoaded", function() {  
+    document.querySelectorAll('.novo-login').forEach( (e)=>{ e.style.display = "none"; });
+  });
 
-  function myCallback() {
+// Trocar as imagens
+  var i = 1;
+  var intervalID = window.setInterval(trocarImagens, 1500);
+
+  function trocarImagens() {
     switch (i) {
       case 1:
+  
         document
           .getElementById("Carrousel")
           .setAttribute("src", "./img/instagram-celular-03.png");
@@ -24,3 +31,6 @@
         break;
     }
   }
+
+  
+ 
