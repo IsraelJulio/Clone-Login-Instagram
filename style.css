@@ -186,6 +186,17 @@ body {
     
   }
 
+  .instagram-phone #Carrousel{
+    z-index:2;
+}
+
+  .instagram-phone #fundo{
+    z-index:1;
+    position: absolute;
+    margin-left: -100px;
+   
+  }
+
 /* media queries */
 
 
