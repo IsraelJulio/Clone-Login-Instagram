@@ -32,5 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  
- 
+//Alternar para a tela de novo login
+  function trocaDeTela(){
+    document.querySelectorAll('.novo-login').forEach( (e)=>{ e.style.display = "flex"; });
+    document.querySelectorAll('.continuar').forEach( (e)=>{ e.style.display = "none"; });
+  }
+
+
